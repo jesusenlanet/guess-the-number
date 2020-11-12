@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Guess the number{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <form class="form-inline" action="/" method="POST">
+            <div class="form-group row">
+                <label class="col-form-label col-4" for="guess">Guess the number</label>
+                <input class="form-control" type="number" name="guess" id="guess" required>
+                <button type="submit" class="btn btn-primary">Try!</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Failure{% endblock title %}
+
+{% block content %}
+    <div class="container"><h3>Failure!</h3>
+        <img src="/static/img/thinking.gif" alt="Continue thinking">
+
+        {% if secret_number > guess %}
+            <div class=""><h5>Try higher!</h5></div>
+        {% else %}
+            <div class=""><h5>Try lower!</h5></div>
+        {% endif %}
+
+        <div class=""><a href="/">Back</a></div>
+    </div>
+{% endblock content %}
